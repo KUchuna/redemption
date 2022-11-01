@@ -82,7 +82,9 @@
         animation: title_anim 3s ease-in-out forwards;
         animation-delay: 0.5s;
     }
-
+    #footer-text-one {
+        width: 200px;
+    }
 
 
 

@@ -46,12 +46,6 @@ uncover.addEventListener('click', () => {
     cover.style.display = 'none';
 })
 
-const accept = document.getElementById('accept');
-
-accept.addEventListener('click', () => {
-    window.open('accepted.html')
-})
-
 const ham = document.getElementById('ham-container');
 const navList = document.getElementById('nav-list');
 const listItem = document.querySelectorAll('.list-item');
