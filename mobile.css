@@ -1,0 +1,98 @@
+@media (max-width: 700px) {
+    body {
+        position: relative;
+    }
+    .ham-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .ham {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin-bottom: 5px;
+    }
+    .ham:nth-child(3) {
+        margin: 0;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 100000;
+        background-color: #ce0249;
+        padding: 130px 50px 50px;
+        align-items: center;
+        min-height: 24000px;
+    }
+    .display-fix {
+        display: flex;
+    }
+    .list-item a{
+        font-size: 40px;
+    }
+    .list-item {
+        padding: 20px;
+    }
+    .list-item:nth-child(1) {
+        padding-top: 0;
+    }
+    .list-item:nth-child(4) {
+        padding: 20px;
+    }
+    .home-title {
+        font-size: 98px;
+        animation: title_color 1.5s ease-in-out forwards;
+        animation-delay: 2.5s;
+        margin-left: -5px;
+    }
+    .home-title, .home-text {
+        text-align: center;
+    }
+    .gallery-container {
+        padding: 50px 10px 0 10px;
+    }
+    .gallery-card {
+        height: 700px;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+    .apology-container p {
+        font-size: 18px;
+    }
+    .buttons-cover h3 {
+        font-size: 15px;
+    }
+    .accept {
+        min-height: 100px;
+        min-width: 200px;
+        margin-right: 30px;
+    }
+    .footer {
+        margin-top: 100px;
+    }
+    .animation-span {
+        animation: title_anim 3s ease-in-out forwards;
+        animation-delay: 0.5s;
+    }
+
+
+
+
+
+
+
+    @keyframes title_anim {
+        100% {width: 102%;}
+    }
+    @keyframes title_color {
+        100% {color: white;}
+    }
+}

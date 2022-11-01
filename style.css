@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "inter";
+}
+
+body {
+    background-color: rgb(247, 245, 244);
+    padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar {
+    height: 80px;
+    background-image: linear-gradient(to top left, #f857a6, #ff5858);
+    display: flex;
+    padding: 0 20px 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 20px 3px rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100000000;
+}
+
+.ham-container {
+    display: none;
+}
+
+.nav-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.list-item {
+    padding-right: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.list-item:nth-child(4) {
+    padding: 0;
+}
+
+.nav-title, .nav-list {
+    cursor: pointer;
+}
+
+.nav-title:hover, .list-item:hover {
+    opacity: 0.7;
+}
+
+.home-section-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-title-container {
+    display: flex;
+    position: relative;
+}
+
+.home-title {
+    font-family: 'Dancing Script';
+    font-size: 150px;
+    transition: all 0.7s ease;
+    z-index: 100;
+}
+
+.animation-span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-image: linear-gradient(to top left, #f857a6, #ff5858);
+    transition: all 0.7s ease;
+}
+
+@media (min-width:701px) {
+   
+    .home-title-container:hover .animation-span{
+        width: 103%;
+    }
+    
+    
+    .home-title-container:hover .home-title {
+        color: white;
+    }
+}
+
+.home-text {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.line {
+    margin-top: 50px;
+    height: 3px;
+    background-color: black;
+}
+
+.gallery-container {
+    display: flex;
+    padding: 50px 20px 0 20px;
+    justify-content: center;
+}
+
+.gallery-card {
+    width: 2000px;
+    height: 1000px;
+    background-image: url("photos/photo1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: solid 2px crimson;
+    box-shadow: 20px 20px 30px 3px rgba(0,0,0,.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    transition: all 0.5s ease;
+}
+
+.circle-switch {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-image: linear-gradient(to top left, #f857a6, #ff5858);
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.circle-switch:nth-child(1) {
+    margin: 0;
+}
+
+.circle-switch:hover {
+    opacity: 0.7;
+}
+
+.circle-active {
+    transition: all 0.4s ease;
+    background-color: #f60d4f !important;  
+    box-shadow: 0 0 2px 10px #f305584d;   
+}
+
+.break-point {
+    background-color: #ce0249;
+    height: 200px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px 7px #f305584d;
+}
+
+.break-point h3 {
+    color: white;
+    font-family: 'Poppins';
+    font-size: 30px;
+}
+
+.break-point:nth-of-type(2) {
+    flex-direction: column;
+    text-align: center;
+}
+
+.break-point:nth-of-type(2) h3:nth-of-type(2){
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.apology-container {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    padding: 20px 25px 20px 25px;
+    display: flex;
+    background-image: linear-gradient(to left, #f857a6, #ff5858);
+    border-radius: 20px;
+}
+
+.apology-container p {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.left-text {
+    margin-right: 10px;
+}
+
+#decision-line {
+    margin-bottom: 50px;
+}
+
+.decision-container {
+    padding: 50px 20px 50px 20px;
+    position: relative;
+    height: 300px;
+    background-image: linear-gradient(to left, #f857a6, #ff5858);
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.accept, .reject {
+    font-size: 20px;
+    width: 180px;
+    height: 60px;
+}
+
+.accept {
+    margin-right: 150px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    animation: color_changer infinite 1s alternate linear;
+}
+
+.reject {
+    background-color: rgb(91, 39, 39);
+}
+
+.buttons-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background-image: linear-gradient(to left, #f857a6, #ff5858);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons-cover h3 {
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.uncover {
+    width: fit-content;
+    height: 50px;
+    padding: 0 20px;
+    text-align: center;
+    background-color: #ce0249;
+    color: white;
+    font-size: 20px;
+    border: solid 1px white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.footer {
+    margin-top: 200px;
+    height: 150px;
+    background-color: rgb(35, 34, 34);
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid 4px rgb(89, 89, 89);
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-list-item {
+    padding-right: 15px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer-text {
+    font-weight: 600;
+}
+
+@keyframes color_changer {
+    0% {background-color: #ce0249;}
+    20% {background-color: rgb(255, 135, 7);}
+    40% {background-color: rgb(255, 234, 0);}
+    60% {background-color: rgb(27, 220, 36);}
+    80% {background-color: rgb(9, 39, 232);}
+    100% {background-color: rgb(182, 25, 230); width: 200px; height: 100px;}
+}
